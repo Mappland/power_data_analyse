@@ -83,6 +83,18 @@
   poetry config virtualenvs.in-project true
   ```
 
+- 请自行在本项目根目录下创建`.cache`文件夹
+
+- 请自行在本项目根目录下的`files`文件夹内下载相应数据集
+
+  ```shell
+  wget https://power-datastore.s3.amazonaws.com/v9/monthly/2017/power_901_monthly_2017_ceres_utc.nc
+  wget https://power-datastore.s3.amazonaws.com/v9/monthly/2018/power_901_monthly_2018_ceres_utc.nc
+  wget https://power-datastore.s3.amazonaws.com/v9/monthly/2019/power_901_monthly_2019_ceres_utc.nc
+  wget https://power-datastore.s3.amazonaws.com/v9/monthly/2020/power_901_monthly_2020_ceres_utc.nc
+  wget https://power-datastore.s3.amazonaws.com/v9/monthly/2021/power_901_monthly_2021_ceres_utc.nc
+  ```
+
 - 使用`poetry`包管理器进行虚拟环境及依赖项安装
 
   ```shell
