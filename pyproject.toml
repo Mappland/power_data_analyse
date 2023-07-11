@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "power-data-analyse"
+version = "0.1.0"
+description = ""
+authors = ["Mappland <36815579+Mappland@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "power_data_analyse"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+netcdf4 = "^1.6.4"
+basemap = "^1.3.7"
+
+
+[[tool.poetry.source]]
+name = "tuna-tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
